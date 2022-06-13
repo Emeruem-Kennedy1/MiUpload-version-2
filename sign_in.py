@@ -35,5 +35,10 @@ class Sheet:
         for sheet in self.sh.worksheets():
             lists.append(sheet.title)
         return lists
-
-
+    
+    def edit_row(self, sheet_title: str, row: int, values: list) -> None:
+        '''
+        Edit a whole row in the sheet
+        params: sheet_title: str, row: int, values: list
+        '''
+        self.sh.worksheet_by_title(sheet_title).update_row(row, values)
