@@ -79,7 +79,7 @@ class Sheet:
         except Exception as e:
             print(e)
 
-    def edit_col(self, sheet_title: str, col: int,header, values: list) -> None:
+    def edit_column(self, sheet_title: str, col: int,header, values: list) -> None:
         '''
         Edit a whole column in the sheet
         params: sheet_title: str, col: int, values: list
